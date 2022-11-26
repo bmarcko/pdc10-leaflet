@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <title>Leaflet</title>
+
+<style>
+    #map { height: 305px; }
+</style>
+
+</head>
+<body>
+
+    <div id="map">
+        <script>
+            var map = L.map('map').setView([15.14521, 120.59446], 13);
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var marker = L.circle([35.1761, 129.0825], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([35.1761, 129.0825])
+            .setContent("Busan, Korea")
+            .addTo(map);
+
+
+            var marker = L.circle([48.8587307, 2.2944894], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([48.8587307, 2.2944894])
+            .setContent("Eiffel Tower, Paris")
+            .addTo(map);
+
+
+            var marker = L.circle([35.0116, 135.7681], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([35.0116, 135.7681])
+            .setContent("Kyoto, Japan")
+            .addTo(map);
+
+            var marker = L.circle([27.17511, 78.04209], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([27.17511, 78.04209])
+            .setContent("Taj Mahal, India")
+            .addTo(map);
+
+            var marker = L.circle([40.33261, 115.97764], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([40.33261, 115.97764])
+            .setContent("Great Wall of China")
+            .addTo(map);
+
+            var marker = L.circle([20.683, -88.5689], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([20.683, -88.5689])
+            .setContent("Chichen Itza, Mexico")
+            .addTo(map);
+
+            var marker = L.circle([41.89028, 12.4929], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([41.89028, 12.4929])
+            .setContent("Colosseum, Italy")
+            .addTo(map);
+
+            var marker = L.circle([-13.16438, -72.54499], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([-13.16438, -72.54499])
+            .setContent("Machu Picchu, Peru")
+            .addTo(map);
+
+            var marker = L.circle([30.3444, 35.3705], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([30.3444, 35.3705])
+            .setContent("Petra, Jordan")
+            .addTo(map);
+
+            var marker = L.circle([-22.95192, -43.21045], {
+            color: 'blue',
+            fillOpacity: 0.25,
+            radius: 1000
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([-22.95192, -43.21045])
+            .setContent("Christ The Redeemer, Brazil")
+            .addTo(map);
+
+
+
+
+
+
+        </script>
+    </div>
+
+</body>
+</html>
